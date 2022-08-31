@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    /* background-image: url('https://unsplash.com/photos/Cos4OXJLs14/19020x1080')  center center fixed; */
+    background:url('https://source.unsplash.com/ag0_gckQsxc/');
+    width: 40vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    background-color: antiquewhite;
+    width: 60vw;
+    height: 100vh;
+}
