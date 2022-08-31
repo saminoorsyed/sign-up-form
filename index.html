@@ -23,7 +23,7 @@
     <div class="content">
         <div class="header">
           <h2 class="hook">Want to end the work week with a tasty treat delivered to your door?</h2>
-          <h3 class="explain"> Now you can imagine what it might be like to sign up for that service </h3>
+          <h3 class="explain"> Now, you can imagine what it might be like to sign up for that service. </h3>
         </div>
         <div class="form">
             <form action="" method="post">
@@ -35,7 +35,7 @@
                     <div class="input-label">
                         <label for="last">last name*</label>
                         <input required type="text" name="last name" id="last-name">
-                    <div></div>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <div class="input-label">
@@ -44,18 +44,18 @@
                     </div>
                     <div class="input-label">
                         <label for="phone">phone number</label>
-                        <input type="number" name="phone" id="phone">
-                    <div></div>
+                        <input type="tel" name="phone" id="phone" placeholder="(555)867-5309">
+                    </div>
                 </fieldset>
                 <fieldset>
                     <div class="input-label">
-                        <label for="password"> password*</label>
-                        <input required type="password" name="password" id="password">
+                        <label for="password1"> password*</label>
+                        <input min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" type="password" name="password" id="password1">
                     </div>
                     <div class="input-label">
-                        <label for="password"> password*</label>
-                        <input minlength="8" maxlength="16" required type="password" name="password" id="password">
-                    <div></div>
+                        <label for="password2"> confirm password*</label>
+                        <input required type="password" name="password" id="password2" oninput="this.setCustomValidity('')">
+                    </div>
                 </fieldset>
                 <button type="submit">Create Account</button>
             </form>

@@ -139,6 +139,11 @@ button:hover {
 
 }
 
-input:invalid {
+
+form.submitted input:invalid {
     border: solid 3px red;
+}
+
+form.submitted input:valid {
+    border: solid 3px green;
 }
