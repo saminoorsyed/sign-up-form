@@ -133,6 +133,7 @@ button {
     color: white;
     font-size: 25px;
     text-shadow: 0 0 2px black;
+    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
 }
 
 button:hover {
