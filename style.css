@@ -1,20 +1,144 @@
 body{
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    height: 100vh;
+    
 }
 
 .hero{
-    /* background-image: url('https://unsplash.com/photos/Cos4OXJLs14/19020x1080')  center center fixed; */
-    background:url('https://source.unsplash.com/ag0_gckQsxc/');
-    width: 40vw;
-    height: 100vh;
+    background:url('https://source.unsplash.com/ag0_gckQsxc/1920x1080') no-repeat center center fixed;
+    min-width: 250px;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    flex:1;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.form {
-    background-color: antiquewhite;
-    width: 60vw;
-    height: 100vh;
+.banner {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: black;
+    opacity: .7;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.company {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+.company > * {
+    margin: 10px;
+}
+
+.company > h1 {
+    font-size: 50px;
+}
+
+.icon{ 
+    opacity: 1;
+    height: 90px;
+    filter: invert(100%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(100%);
+}
+
+.credit{
+    display: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    margin-top: auto;
+    align-self: center;
+    
+}
+
+.content {
+    background-color: rgb(209, 181, 151);
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1.6;
+    background-image: url('/images/noun-cupcake-1043425.svg');
+    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{ 
+    margin-top: 80px;
+    margin: 30px;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hook {
+    opacity: 1;
+    margin-bottom: 80px;
+}
+
+.explain {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    
+}
+
+fieldset {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    border: none;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 4px;
+    height: 25px;
+    border: solid 1px black;
+}
+
+button {
+    margin-top: 20px;
+    background-color:transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 0 0 2px black;
+}
+
+button:hover {
+    color: rgb(166, 67, 146);
+    text-shadow: 0 0 1px white;
+
+}
+
+input:invalid {
+    border: solid 3px red;
 }
