@@ -70,8 +70,6 @@ body{
     align-items: center;
     justify-content: center;
     flex: 1.5;
-    background: url('images/noun-cupcake-1043425.svg');
-    background-color: rgb(209, 181, 151);
     font-family: cursive, Georgia, 'Times New Roman', Times, serif;
 }
 
